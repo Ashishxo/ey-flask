@@ -26,7 +26,7 @@ def chat():
             return jsonify({"error": "No prompt provided"}), 400
 
         # Generate response using Gemini API
-        model = genai.GenerativeModel("gemini-1.5-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
 
         # Return Gemini response
